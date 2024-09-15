@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+}
+
+.body-text {
+    color:coral;
+    width: 50%;
+    align-content: center;
+    margin: auto;
+}
+
+p {
+    color: aqua;
+}
+
+.track-name {
+    text-align: center;
+    color:aqua;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.step-forward {
+    align-content: center;
+}
+
+.episode {
+    align-content: center;
+    color: orange
+}
+
+.tagline {
+    align-content: center;
+    color:azure
+}
+
+.TODO {
+    color:red;
+}
+
+.kai-thoughts {
+    color:seagreen
+}
+
+.naomi-thoughts {
+    color:teal
+}

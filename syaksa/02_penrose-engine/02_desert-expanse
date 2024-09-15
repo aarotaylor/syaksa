@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/htmx/htmx.min.js"></script>
+        <style type="text/css" src="../../syaksa.css"></style>
+    </head>
+
+    <body>
+        <br/>
+        <div class="title">
+            <h1 class="track-name">Penrose Engine</h1>
+            <a class="step-back" href="01_displacement.html"><<<<</a>
+            <h2 class="episode">Desert Expanse</h2>
+            <h3 class="tagline"></h3>
+        </div>
+        <div class="body-text">
+            
+        </div>
+
+        <a class="step-forward" href="next.html">Alea Iacta Est</a>
+    </body>
+    <footer>
+        
+    </footer>
+</html>
