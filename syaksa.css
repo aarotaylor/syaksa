@@ -39,10 +39,20 @@ p {
     color:red;
 }
 
+/*---------------------- Naomi ----------------------*/
+
+.naomi-thoughts {
+    color:teal
+}
+
+/*---------------------- Kai ----------------------*/
+
 .kai-thoughts {
     color:seagreen
 }
 
-.naomi-thoughts {
-    color:teal
+/*---------------------- syaksa ----------------------*/
+
+.emissary-dialogue {
+    color:purple
 }
