@@ -2,13 +2,88 @@ body {
     background-color: black;
     text-align: center;
     align-content: center;
+    background-image: url(img/SYAKSA.jpg);
+    
 }
 
 .body-text {
+    
+    text-shadow: black;
     color: coral;
     width: 50%;
     align-content: center;
     margin: auto;
+    opacity: 1;
+    
+}
+
+/*------------------ Track Specifics ------------------*/
+
+.portal {
+    background-image: url(img/_portal_.jpg);
+    background-size: cover;
+}
+
+.portal-text {
+    color: coral;
+}
+
+.penrose-engine {
+    background-image: url(img/_Penrose-Engine.jpg);
+    background-size: cover;
+}
+
+.penrose-text {
+    
+}
+
+.tff {
+    background-image: url(img/_forbidden-forest_.jpg);
+    background-size: cover;
+}
+
+.tff-text {
+    
+}
+
+.atomkraft {
+    background-image: url(img/_atomkraft_.jpg);
+    background-size: cover;
+}
+
+.atomkraft-text {
+    
+}
+
+.astraphobia {
+    background-image: url(img/_astraphobia_.jpg);
+    background-size: cover;
+}
+
+.astraphobia-text {
+    
+}
+
+.bulwark {
+    background-image: url(img/_Bulwark.jpg);
+    background-size: cover;
+}
+
+.bulwark-text {
+    
+}
+
+.proton-decay {
+    background-image: url(img/_proton-decay_.jpg);
+    background-size: cover;
+}
+
+.proton-text {
+    
+}
+
+.content-container {
+    
 }
 
 p {
