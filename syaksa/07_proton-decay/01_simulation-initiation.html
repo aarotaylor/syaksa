@@ -3,6 +3,7 @@
 
 <head>
     <script src="/htmx/htmx.min.js"></script>
+    <script src="../../index.js"></script>
     <link rel="stylesheet" type="text/css" href="../../syaksa.css" />
 </head>
 
@@ -13,15 +14,22 @@
         <h2 class="episode">A Cosmic Bulwark</h2>
         <h3 class="tagline"><small>is there truly a difference between the natural and artificial?</small></h3>
         <a class="step-back" href="../06_bulwark/01_nightfall.html">
-            <<<<< /a>
+            <<<< </a>
                 <a class="home" href="../syaksa.html">Focus</a>
                 <a class="step-forward" href="next.html">>>>></a>
     </div>
+
+    <!-- Audio player -->
+    <audio id="audioPlayer" controls>
+        <source src="../../audio/flac/07 Proton Decay (Epilogue).flac" type="audio/flac">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="body-text proton-text">
 
         <br />
         <div class="track-time" id="proton-decay-start">
-            <b class="timestamp">---- 00:00 ----</b>
+            <b class="timestamp" data-time="0">---- 00:00 ----</b>
             <br />
             <i class="timestamp-episode">Simulation Initiation</i>
         </div>
@@ -29,32 +37,32 @@
 
         <!-- perhaps here have the terminal effects? Find out how to run the animations in sequence...-->
 
-        <div class="typewriter">
-            <p>
-                Loading...Constants
-            </p>
-        </div>
-        <div class="typewriter">
-            <p class="typewriter">
-                ...................Setting Entropic Maximum...................
-            </p>
-        </div>
 
-        <div class="typewriter">
-            <p>
-                Loading...Thermodynamics
-            </p>
-        </div>
-        <div class="typewriter">
-            <p class="typewriter">
-                ...................Setting Field Saturation...................
-            </p>
-        </div>
+        <p class="protonstamp" data-time="9">
+            Loading...Constants
+        </p>
+
+
+        <p class="protonstamp" data-time="15">
+            ...................Setting Entropic Maximum...................
+        </p>
+
+
+
+        <p class="protonstamp" data-time="20">
+            Loading...Thermodynamics
+        </p>
+
+
+        <p class="protonstamp" data-time="25">
+            ...................Setting Field Saturation...................
+        </p>
+
 
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 00:42 ----</b>
+            <b class="timestamp" data-time="42">---- 00:42 ----</b>
             <br />
             <i class="timestamp-episode">Stelliferous Era</i>
         </div>
@@ -62,7 +70,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 01:24 ----</b>
+            <b class="timestamp" data-time="84">---- 01:24 ----</b>
             <br />
             <i class="timestamp-episode">Degenerate Era</i>
         </div>
@@ -70,7 +78,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 02:07 ----</b>
+            <b class="timestamp" data-time="127">---- 02:07 ----</b>
             <br />
             <i class="timestamp-episode">Darkness Abounds</i>
         </div>
@@ -78,7 +86,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 02:49 ----</b>
+            <b class="timestamp" data-time="169">---- 02:49 ----</b>
             <br />
             <i class="timestamp-episode">A Peculiar Process</i>
         </div>
@@ -86,7 +94,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 03:36 ----</b>
+            <b class="timestamp" data-time="216">---- 03:36 ----</b>
             <br />
             <i class="timestamp-episode">Battle Against Oblivion</i>
         </div>
@@ -94,7 +102,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 03:54 ----</b>
+            <b class="timestamp" data-time="236">---- 03:54 ----</b>
             <br />
             <i class="timestamp-episode">Rudderless in the Night</i>
         </div>
@@ -102,7 +110,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 04:15 ----</b>
+            <b class="timestamp" data-time="255">---- 04:15 ----</b>
             <br />
             <i class="timestamp-episode">Signal Echoes</i>
         </div>

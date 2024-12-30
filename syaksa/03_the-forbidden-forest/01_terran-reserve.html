@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <script src="/htmx/htmx.min.js"></script>
+    <script src="../../htmx/htmx.min.js"></script>
+    <script src="../../index.js"></script>
     <link rel="stylesheet" type="text/css" href="../../syaksa.css" />
 </head>
 
@@ -14,14 +15,20 @@
         <div class="tagline" id="tff-tag">
             <h3 class="tagline"><i>the sounds of home</i></h3>
         </div>
-        <a class="step-back" href="../02_penrose-engine/01_displacement.html"><<<<<</a>
+        <a class="step-back" href="../02_penrose-engine/01_displacement.html">
+            <<<<< </a>
                 <a class="home" href="../syaksa.html">Focus</a>
                 <a class="step-forward" href="../04_atomkraft/01_copper-skies.html">>>>></a>
     </div>
+    <!-- Audio player -->
+    <audio id="audioPlayer" controls>
+        <source src="..\..\audio\flac\03 The Forbidden Forest.flac" type="audio/flac">
+        Your browser does not support the audio element.
+    </audio>
     <div class="body-text tff-text">
         <br />
         <div class="track-time" id="tff-start">
-            <b class="timestamp">---- 00:00 ----</b>
+            <b class="timestamp" data-time="0">---- 00:00 ----</b>
             <br />
             <i class="timestamp-episode">I: Terran Reserve</i>
         </div>
@@ -40,7 +47,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 01:09 ----</b>
+            <b class="timestamp" data-time="69">---- 01:09 ----</b>
             <br />
             <i class="timestamp-episode">II: Tentative Steps</i>
         </div>
@@ -87,7 +94,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 01:56 ----</b>
+            <b class="timestamp" data-time="116">---- 01:56 ----</b>
         </div>
         <br />
 
@@ -96,7 +103,7 @@
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 02:19 ----</b>
+            <b class="timestamp" data-time="141">---- 02:21 ----</b>
             <br />
             <i class="timestamp-episode">III: Into the Dark Forest</i>
         </div>
@@ -108,7 +115,8 @@
             pillars. Ahead of us, emerging canopy-first out of the fog, were the tops of titanic trees, casting darkness
             with multiple overlapping shadows falling on the blazing mist. These had to be truly Ancient sentinels. A
             large avian creature, wings outstretched and unmoving, flew straight up across the treetops, uncaring about
-            the gravity we were forced to obey. <b>Fear</b> gripped me, forced confinement to where one could see their own
+            the gravity we were forced to obey. <b>Fear</b> gripped me, forced confinement to where one could see their
+            own
             shadow in this strange place, but fear would soon force us out of this exposed position, down the stairs,
             and into the relative darkness of the strange Forest that lay ahead
         </p>
@@ -125,12 +133,50 @@
         into the fog; a diffuse warm glow saturating the strange Forest.
 
 
+        <div class="track-time">
+            <b class="timestamp" data-time="165">---- 02:45 ----</b>
+            <br />
+            <i class="timestamp-episode">Deeper</i>
+        </div>
+
+        <div class="track-time">
+            <b class="timestamp" data-time="189">---- 03:09 ----</b>
+            <br />
+            <i class="timestamp-episode">Pursued</i>
+        </div>
+
+        <div class="track-time">
+            <b class="timestamp" data-time="213">---- 03:33 ----</b>
+            <br />
+            <i class="timestamp-episode">Respite</i>
+        </div>
 
         <br />
         <div class="track-time">
-            <b class="timestamp">---- 03:56 ----</b>
+            <b class="timestamp" data-time="237">---- 03:57 ----</b>
             <br />
             <i class="timestamp-episode">IV: Abduction</i>
+        </div>
+        <br />
+
+        <div class="track-time">
+            <b class="timestamp" data-time="261">---- 04:21 ----</b>
+            <br />
+            <i class="timestamp-episode">Salamander Walk</i>
+        </div>
+        <br />
+
+        <div class="track-time">
+            <b class="timestamp" data-time="303">---- 05:03 ----</b>
+            <br />
+            <i class="timestamp-episode">Halt</i>
+        </div>
+        <br />
+
+        <div class="track-time">
+            <b class="timestamp" data-time="313">---- 05:13 ----</b>
+            <br />
+            <i class="timestamp-episode">Proton Decay?</i>
         </div>
         <br />
 
