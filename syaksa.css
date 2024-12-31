@@ -2,9 +2,24 @@ body {
     background-color: black;
     text-align: center;
     align-content: center;
-    /*background-image: url(img/SYAKSA.jpg);*/
+    background-image: url(img/SYAKSA.jpg);
 
 }
+
+/* Pseudo-element for background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/SYAKSA.jpg) no-repeat center center fixed;
+    background-size: cover;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Behind the content */
+    opacity: 0; /* Initially set to 0 (black background) */
+  }
 
 .body-text {
 
@@ -14,12 +29,13 @@ body {
     align-content: center;
     margin: auto;
     opacity: 1;
+    background-color: rgba(0, 0, 0, 0.3);
 
 }
 
-.text-between {
-    display: block; /* Initially hide the text elements */
-}
+/* .text-between {
+    display: block; /* Initially hide the text elements *
+} */
 
 .timestamp {
     display: block;
@@ -68,16 +84,31 @@ body {
 
 .penrose-text {
 
-    background-image: linear-gradient(45deg, #ff6347, #ff4500, #3cb371);
+    /* background-image: linear-gradient(45deg, #ff6347, #ff4500, #3cb371); */
     /* Gradient with three colors */
-    background-clip: text;
-    color: transparent
+    /* background-clip: text; */
+    /* color: transparent */
 }
 
 .tff {
     background-image: url(img/_forbidden-forest_.jpg);
     background-size: cover;
 }
+
+/* Pseudo-element for background image */
+.tff::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(img/_forbidden-forest_.jpg) no-repeat center center fixed;
+    background-size: cover;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Behind the content */
+    opacity: 0; /* Initially set to 0 (black background) */
+  }
 
 .tff-text {}
 
@@ -86,7 +117,9 @@ body {
     background-size: cover;
 }
 
-.atomkraft-text {}
+.atomkraft-text {
+    
+}
 
 .astraphobia {
     background-image: url(img/_astraphobia_.jpg);
@@ -170,11 +203,11 @@ p {
     /* mix-blend-mode: difference; */
 }
 
-.astraphobia-text>span {
+/* .astraphobia-text>span {
     background-color: black;
     line-height: 2;
 
-}
+} */
 
 /*---------------------- bulwark ----------------------*/
 

@@ -71,22 +71,22 @@ function startAudioTimer() {
             });
 
             // Handle text traversal
-            if (currentTextElementIndex < textElements.length) {
-                const currentElement = textElements[currentTextElementIndex];
+            // if (currentTextElementIndex < textElements.length) {
+            //     const currentElement = textElements[currentTextElementIndex];
                 
-                // If the current time reaches or exceeds the time for this element, show it
-                if (currentTime >= textAppearTimes[currentTextElementIndex]) {
-                    currentElement.style.color = 'coral';
-                    currentElement.style.display = 'block'
-                    showNextCharacter(currentElement, cursorPosition);
+            //     // If the current time reaches or exceeds the time for this element, show it
+            //     if (currentTime >= textAppearTimes[currentTextElementIndex]) {
+            //         currentElement.style.color = 'coral';
+            //         currentElement.style.display = 'block'
+            //         showNextCharacter(currentElement, cursorPosition);
 
-                    // Move to the next text element when the current one is fully displayed
-                    if (cursorPosition >= currentElement.textContent.length) {
-                        currentTextElementIndex++;
-                        cursorPosition = 0;  // Reset cursor position for the next element
-                    }
-                }
-            }
+            //         // Move to the next text element when the current one is fully displayed
+            //         if (cursorPosition >= currentElement.textContent.length) {
+            //             currentTextElementIndex++;
+            //             cursorPosition = 0;  // Reset cursor position for the next element
+            //         }
+            //     }
+            // }
 
             // Stop the timer once the audio has ended
             if (audioPlayer.ended) {
@@ -100,3 +100,12 @@ function startAudioTimer() {
 document.addEventListener('DOMContentLoaded', () => {
     startAudioTimer();
 });
+
+window.addEventListener('scroll', function() {
+    const scrollY = window.scrollY; // Get the scroll position
+    const height = document.body.scrollHeight - window.innerHeight; // Total scrollable height
+    const opacity = Math.min(scrollY / height, 1); // Fade effect based on scroll position
+
+    // Adjust the opacity of the background
+    document.body.style.setProperty('--bg-opacity', opacity); // Black fading to transparent
+  });
