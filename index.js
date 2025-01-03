@@ -50,13 +50,13 @@ function startAudioTimer() {
         console.log(textElements)
         // Start the timer
         const timer = setInterval(() => {
-            const currentTime = audioPlayer.currentTime - startTime;
+            const currentTime = audioPlayer.currentTime;
 
             if (proton_decay) {
                 protonstamps.forEach((header) => {
                     const timestampTime = parseFloat(header.getAttribute('data-time'));
     
-                    if (currentTime >= timestampTime) {
+                    if (audioPlayer.currentTime >= timestampTime) {
                         header.style.display = 'block';
                     }
                 });
@@ -65,8 +65,11 @@ function startAudioTimer() {
             timestamps.forEach((header) => {
                 const timestampTime = parseFloat(header.getAttribute('data-time'));
 
-                if (currentTime >= timestampTime) {
+                if (audioPlayer.currentTime >= timestampTime) {
                     header.style.color = 'coral';
+                }
+                else {
+                    header.style.color = 'white'
                 }
             });
 
