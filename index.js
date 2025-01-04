@@ -50,7 +50,6 @@ function startAudioTimer() {
         console.log(textElements)
         // Start the timer
         const timer = setInterval(() => {
-            const currentTime = audioPlayer.currentTime;
 
             if (proton_decay) {
                 protonstamps.forEach((header) => {

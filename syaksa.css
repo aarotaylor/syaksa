@@ -3,11 +3,11 @@ body {
     text-align: center;
     align-content: center;
     background-image: url(img/SYAKSA.jpg);
-
+    
 }
 
 /* Pseudo-element for background image */
-body::before {
+/* body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -17,9 +17,9 @@ body::before {
     background: url(img/SYAKSA.jpg) no-repeat center center fixed;
     background-size: cover;
     transition: opacity 0.3s ease;
-    z-index: -1; /* Behind the content */
-    opacity: 0; /* Initially set to 0 (black background) */
-  }
+    z-index: -1; /* Behind the content /
+    opacity: 0; /* Initially set to 0 (black background) /
+  } */
 
 .body-text {
 
@@ -32,6 +32,19 @@ body::before {
     background-color: rgba(0, 0, 0, 0.3);
 
 }
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px black;
+}
+
+img:hover {
+    box-shadow: 5px 5px 15px coral;
+}
+
+.helix-corp {}
 
 /* .text-between {
     display: block; /* Initially hide the text elements *
@@ -66,11 +79,42 @@ body::before {
     /* Visual indicator of the cursor */
 }
 
+/*------------------ Structural ------------------*/
+
+.navbar {
+    border: 2px solid teal;
+    text-align: center;
+}
+
+.artist-splash {
+    width: 50%;
+    border: 2px black;
+    margin: auto;
+}
+
+#isydia-container {
+    float: left;
+
+}
+
+#procyon-b-container {
+
+    float: right;
+}
+
+.bandcamp-embed-container {}
+
+.bandcamp-embed-small {
+    border: 0;
+    width: 50%;
+    height: 120px;
+}
+
 /*------------------ Track Specifics ------------------*/
 
 .portal {
     background-image: url(img/_portal_.jpg);
-    background-size: cover;
+
 }
 
 .portal-text {
@@ -106,9 +150,11 @@ body::before {
     background: url(img/_forbidden-forest_.jpg) no-repeat center center fixed;
     background-size: cover;
     transition: opacity 0.3s ease;
-    z-index: -1; /* Behind the content */
-    opacity: 0; /* Initially set to 0 (black background) */
-  }
+    z-index: -1;
+    /* Behind the content */
+    opacity: 0;
+    /* Initially set to 0 (black background) */
+}
 
 .tff-text {}
 
@@ -117,9 +163,7 @@ body::before {
     background-size: cover;
 }
 
-.atomkraft-text {
-    
-}
+.atomkraft-text {}
 
 .astraphobia {
     background-image: url(img/_astraphobia_.jpg);
@@ -217,7 +261,7 @@ p {
 }
 
 .bulwark-text>span {
-    
+
     line-height: 2;
 }
 
