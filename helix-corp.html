@@ -7,34 +7,39 @@
     <link rel="stylesheet" type="text/css" href="syaksa.css" />
 </head>
 
-<body>
+<body class="helix">
 
     <h1>Helix Corporation</h1>
 
+
     <div class="container nav-container">
-        <!-- Site navigation.  -->
+
         <div class="navbar">
-            <a href="syaksa/syaksa.html">Narratives</a>
-            <a>Updates</a>
-            <a href="nav/purpose.html">Purpose</a>
-            <a>Downloads</a>
-            <a>Links</a>
+            <a class="navlink" href="syaksa/syaksa.html">Narratives</a>
+            <a class="navlink">Updates</a>
+            <a class="navlink" href="nav/purpose.html">Purpose</a>
+            <a class="navlink">Downloads</a>
+            <a class="navlink">Links</a>
         </div>
     </div>
+    <!-- why doesn't the background image cover behind the artist ones? does the below container, or its contents, cover it somehow? -->
+    <br />
 
     <br />
-    <div class="container">
-        <div class="artist-splash" id="isydia-container">
+    <div class="artist-splash" id="isydia-container">
+        <a>
             <img src="img\Isydia.jpg">
-        </div>
+        </a>
 
-        <div class="artist-splash" id="procyon-b-container">
-            <img id="isydia" src="img\0_Procyon B Banner.jpg">
-        </div>
     </div>
 
-    
-    <div class="bandcamp-embed-container">
+    <div class="artist-splash" id="procyon-b-container">
+        <img id="isydia" src="img\0_Procyon B Banner.jpg">
+    </div>
+
+
+
+    <!-- <div class="bandcamp-embed-container">
         <br />
         <iframe class="bandcamp-embed-small"
             src="https://bandcamp.com/EmbeddedPlayer/track=3622362502/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/artwork=small/transparent=true/"
@@ -44,7 +49,7 @@
             src="https://bandcamp.com/EmbeddedPlayer/track=2581261492/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/"
             seamless><a href="https://isydia.bandcamp.com/track/relay-interference">Relay Interference by Procyon
                 B</a></iframe>
-    </div>
+    </div> -->
 
 </body>
 
