@@ -7,20 +7,20 @@ a {
     padding: 2px;
     transition-duration: 10ms;
     font: 1em sans-serif;
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 .navlink:hover {
     color: rgba(0, 200, 200, 0.5);
     /* background-color: rgba(175, 80, 223, 0.4); */
-    
+
 }
 
 body {
     /* background-color: black; */
     text-align: center;
     background-image: url(img/SYAKSA.jpg);
-    
+
 }
 
 /* Pseudo-element for background image */
@@ -79,6 +79,12 @@ img:hover {
     color: white;
 }
 
+table {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #audioPlayer {
     position: sticky;
     top: 0;
@@ -98,6 +104,29 @@ img:hover {
 
 /*------------------ Structural ------------------*/
 
+.thumbnail {
+    width: 20px;
+    height: 20px;
+}
+
+.horizons {
+    width: 500px;
+    height: 500px;
+    cursor: crosshair;
+    background-color: coral;
+    opacity: 0.5;
+}
+
+.hidden-content {
+    display: none;
+    color: darkslateblue;
+    background-color: palegreen;
+}
+
+.horizons:hover+#hidden-content {
+    display: block;
+}
+
 .navbar {
     /* border: 2px solid teal; */
     text-align: center;
@@ -105,13 +134,13 @@ img:hover {
 
 .navbutton {
     align-items: flex-start;
-    
+
 }
 
 .container {
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .artist-splash {
@@ -122,12 +151,20 @@ img:hover {
 
 #isydia-container {
     float: left;
-
+    font-family: fantasy;
+    text-decoration: wavy;
 }
 
 #procyon-b-container {
 
     float: right;
+}
+
+#audio-table {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
 }
 
 .bandcamp-embed-container {}
@@ -138,15 +175,24 @@ img:hover {
     height: 120px;
 }
 
-/*------------------ Track Specifics ------------------*/
+/*------------------ Track/page Specifics ------------------*/
+
+#syaksa-container {
+    width: 15%;
+    height: 200px;
+}
+
+.downloads {
+
+}
 
 .helix {
     background-image: url(img/SYAKSA.jpg);
+    height: 100%;
 }
 
 .portal {
     background-image: url(img/_portal_.jpg);
-
 }
 
 .portal-text {
