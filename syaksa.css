@@ -20,7 +20,20 @@ body {
     /* background-color: black; */
     text-align: center;
     background-image: url(img/SYAKSA.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
 
+.body-procyon {
+    background-image: url(img/archive_stacks__Tithi\ Luadthong.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.body-isydia {
+    background-image: url(img/0_Isydia\ Banner.jpg);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 /* Pseudo-element for background image */
@@ -46,7 +59,7 @@ body {
     align-content: center;
     margin: auto;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 
 }
 
@@ -107,6 +120,11 @@ table {
 .thumbnail {
     width: 20px;
     height: 20px;
+}
+
+.portraits {
+    width: 90px;
+    height: 90px;
 }
 
 .horizons {
@@ -182,9 +200,7 @@ table {
     height: 200px;
 }
 
-.downloads {
-
-}
+.downloads {}
 
 .helix {
     /* background-image: url(img/SYAKSA.jpg);
@@ -280,6 +296,26 @@ p {
 
 .step-forward {
     align-content: center;
+    background-color: rgba(90, 109, 176, 0.7);
+    padding: 2px;
+    border-radius: 30%;
+    margin: 2px;
+}
+
+.step-forward:hover {
+    background-color: rgba(90, 109, 176, 0.3);
+}
+
+.step-back {
+    align-content: center;
+    background-color: rgba(90, 109, 176, 0.7);
+    padding: 2px;
+    border-radius: 10%;
+    margin: 2px;
+}
+
+.step-back:hover {
+    background-color: rgba(90, 109, 176, 0.3);
 }
 
 .episode {
