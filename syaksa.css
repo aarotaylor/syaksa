@@ -4,9 +4,9 @@ a {
 }
 
 .navlink {
-    padding: 2px;
-    transition-duration: 10ms;
-    font: 1em sans-serif;
+    padding: 23px;
+    transition-duration: 100ms;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: antiquewhite;
 }
 
@@ -74,7 +74,11 @@ img:hover {
     box-shadow: 5px 5px 15px coral;
 }
 
-.helix-corp {}
+.helix-corp {
+    background-image: url(/img/subterrine-square_grandeduc.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
 
 /* .text-between {
     display: block; /* Initially hide the text elements *
@@ -200,6 +204,11 @@ table {
     height: 200px;
 }
 
+.flood-basalt {
+    background-image: url(/img/Flood\ Basalt\ __\ Liu\ Zishan.jpg);
+    background-size: cover;
+}
+
 .downloads {}
 
 .helix {
@@ -281,6 +290,16 @@ table {
 }
 
 .proton-text {}
+
+.shifting-sea {
+    background-image: url(img/_Across\ the\ Shifting\ Sea.jpg);
+    background-size: cover;
+}
+
+
+.shifting-sea-text {
+    color: rgb(230, 164, 135);
+}
 
 .content-container {}
 
