@@ -314,15 +314,16 @@ p {
 }
 
 .step-forward {
-    align-content: center;
-    background-color: rgba(90, 109, 176, 0.7);
+    align-content: left;
+    background-color: rgba(90, 109, 176);
     padding: 2px;
-    border-radius: 30%;
-    margin: 2px;
+    border-radius: 10%;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .step-forward:hover {
-    background-color: rgba(90, 109, 176, 0.3);
+    background-color: rgba(239, 209, 170, 0.9);
 }
 
 .step-back {
