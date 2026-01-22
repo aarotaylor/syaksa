@@ -29,19 +29,133 @@
 
 @keyframes penrose-pulses {
     0% {
-        background-color: rgba(0, 0, 0, 0.82);
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(128, 63, 40, 0.25);
+    }
+
+    7% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(237, 176, 102, 0.7);
+    }
+
+    10% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(237, 176, 102, 0.83);
     }
 
     50% {
-        background-color: rgba(0, 200, 200, 0.5);
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(255, 127, 80, 0.7);
+    }
+
+    75% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(128, 63, 40, 0.555);
+    }
+
+    80% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(128, 63, 40, 0.35);
     }
 
     100% {
-        background-color: coral;
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(128, 63, 40, 0.25);
     }
 }
 
+@keyframes tff-sweeps {
+    0% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(35, 9, 8, 0.25);
+    }
 
+    7% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(0, 200, 200, 0.5);
+    }
+
+    10% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(0, 200, 200, 0.79);
+    }
+
+    50% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(133, 43, 34, 0.7);
+    }
+
+    100% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(35, 9, 8, 0.25);
+    }
+
+}
+
+@keyframes atomkr-pings {
+    0% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(35, 9, 8, 0.25);
+    }
+
+    6% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(35, 9, 8, 0.43);
+    }
+
+    8% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(108, 27, 201, 0.651);
+    }
+
+    10% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(117, 44, 201, 0.863);
+    }
+
+    74% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(133, 43, 34, 0.7);
+    }
+
+    100% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(35, 9, 8, 0.25);
+    }
+
+}
+
+@keyframes astr-strikes {
+    0% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(122, 172, 184, 0.43);
+    }
+
+    6% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(122, 172, 184, 0.43);
+    }
+
+    7% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(110, 219, 194, 0.851);
+    }
+
+    34% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(19, 128, 102, 0.89);
+    }
+
+    100% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(122, 172, 184, 0.43);
+    }
+
+}
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
 
 a {
     /* background-color: rgba(255, 127, 80, 0.4); */
@@ -188,11 +302,40 @@ table {
 .audio-container {}
 
 .ac-penrose {
-    animation: penrose-pulse ease;
+
+    animation: penrose-pulses ease;
     animation-iteration-count: infinite;
-    animation-duration: 16s;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+    /* animation-play-state: paused; */
+
+    /* transition: transform 0.6s cubic-bezier(0.68, 3.6, 0.32, 1.6); */
+}
+
+.ac-tff {
+    animation: tff-sweeps ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1.42s;
     animation-fill-mode: both;
 }
+
+.ac-atomkr {
+
+    animation: atomkr-pings ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+
+}
+
+.ac-astra {
+    animation: astr-strikes ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+.ac-bulwark {}
 
 .ac-proton {
     animation: changeColor ease;
