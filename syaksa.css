@@ -1,3 +1,48 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(/static/fonts/comfortaa/webfonts/comfortaa-latin-300-normal.woff);
+}
+
+/* @font-face {
+    font-family: Comfortaa;
+    src: url(/static/comfortaa/webfonts/);
+} */
+
+@font-face {
+    font-family: Redacted;
+    src: url(/static/fonts/redacted-script_5.2.8/webfonts/redacted-script-latin-300-normal.woff);
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: rgba(0, 0, 0, 0.82);
+    }
+
+    50% {
+        background-color: rgba(0, 200, 200, 0.5);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.82);
+    }
+}
+
+@keyframes penrose-pulses {
+    0% {
+        background-color: rgba(0, 0, 0, 0.82);
+    }
+
+    50% {
+        background-color: rgba(0, 200, 200, 0.5);
+    }
+
+    100% {
+        background-color: coral;
+    }
+}
+
+
+
 a {
     /* background-color: rgba(255, 127, 80, 0.4); */
     color: black;
@@ -6,8 +51,9 @@ a {
 .navlink {
     padding: 23px;
     transition-duration: 100ms;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Comfortaa, sans-serif;
     color: antiquewhite;
+
 }
 
 .navlink:hover {
@@ -15,6 +61,28 @@ a {
     /* background-color: rgba(175, 80, 223, 0.4); */
 
 }
+
+/* navbar shenanigans */
+
+.nav-container {
+    transition-duration: 100ms;
+    background-color: rgba(0, 0, 0, 0.22);
+    padding: 2px;
+}
+
+.nc-penrose {
+    transition-duration: 500ms;
+    background-color: rgba(0, 0, 0, 0.22);
+    padding: 2px;
+}
+
+
+.nav-container:hover {
+    background-color: rgba(0, 200, 200, 0.5);
+    padding: 2px;
+}
+
+/* navbar shenanigans */
 
 body {
     /* background-color: black; */
@@ -59,7 +127,7 @@ body {
     align-content: center;
     margin: auto;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.82);
 
 }
 
@@ -111,6 +179,30 @@ table {
     /* Add a background to ensure it's readable */
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 200ms;
+    border-radius: 3%;
+
+
+}
+
+.audio-container {}
+
+.ac-penrose {
+    animation: penrose-pulse ease;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+    animation-fill-mode: both;
+}
+
+.ac-proton {
+    animation: changeColor ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1.34s;
+    animation-fill-mode: both;
+}
+
+#audioPlayer:hover {
+    background-color: rgba(195, 50, 43, 0.32);
 }
 
 .cursor {
@@ -162,7 +254,6 @@ table {
 .container {
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .artist-splash {
@@ -182,11 +273,13 @@ table {
     float: right;
 }
 
-#audio-table {
+.audio-table {
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     padding: 2px;
+    background-color: rgba(0, 0, 0, 0.82);
+    border-radius: 5%;
 }
 
 .bandcamp-embed-container {}
@@ -372,6 +465,10 @@ p {
 
 .emissary-dialogue {
     color: purple
+}
+
+.em-r {
+    font-family: Redacted;
 }
 
 /*---------------------- astraphobia ----------------------*/
