@@ -19,7 +19,7 @@
     }
 
     50% {
-        background-color: rgba(0, 200, 200, 0.5);
+        background-color: rgba(117, 189, 225, 0.5);
     }
 
     100% {
@@ -149,6 +149,39 @@
     100% {
         /* background-color: rgba(0, 0, 0, 0.82); */
         background-color: rgba(122, 172, 184, 0.43);
+    }
+
+}
+
+@keyframes bulw-breaths {
+    0% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(1, 159, 90, 0.2);
+    }
+
+    7% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(133, 43, 34, 0.7);
+    }
+
+    34% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(253, 173, 100, 0.87);
+    }
+
+    /* 66% {
+        /* background-color: rgba(0, 0, 0, 0.82); 
+        background-color: rgba(253, 173, 100, 0.925);
+    } */
+
+    93% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(133, 43, 34, 0.7);
+    }
+
+    100% {
+        /* background-color: rgba(0, 0, 0, 0.82); */
+        background-color: rgba(1, 159, 90, 0.2);
     }
 
 }
@@ -292,6 +325,7 @@ table {
     /* Make sure it's on top of other content */
     /* Add a background to ensure it's readable */
     padding: 10px;
+    margin: 3px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition-duration: 200ms;
     border-radius: 3%;
@@ -335,7 +369,12 @@ table {
     animation-fill-mode: both;
 }
 
-.ac-bulwark {}
+.ac-bulwark {
+    animation: bulw-breaths ease;
+    animation-iteration-count: infinite;
+    animation-duration: 2.38s;
+    animation-fill-mode: both;
+}
 
 .ac-proton {
     animation: changeColor ease;
@@ -364,6 +403,10 @@ table {
 .portraits {
     width: 90px;
     height: 90px;
+}
+
+.home{
+    background-image: url(/img/thumbnails/Isydia\ -\ Syaksa.jpg);
 }
 
 .horizons {
