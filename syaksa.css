@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: Redacted;
-    src: url(/static/fonts/redacted-script_5.2.8/webfonts/redacted-script-latin-300-normal.woff);
+    src: url(/static/fonts/redacted-script_5.2.8/webfonts/redacted-script-latin-300-normal.woff) format('woff');
 }
 
 @keyframes changeColor {
@@ -206,7 +206,6 @@ a {
 .navlink:hover {
     color: rgba(0, 200, 200, 0.5);
     /* background-color: rgba(175, 80, 223, 0.4); */
-
 }
 
 /* navbar shenanigans */
@@ -268,6 +267,7 @@ body {
 
 .body-text {
 
+    font-family: 'Redacted', sans-serif;
     text-shadow: black;
     color: coral;
     width: 50%;
