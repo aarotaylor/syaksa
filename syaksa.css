@@ -250,6 +250,12 @@ body {
     min-height: 100vh;
 }
 
+.body-urn {
+    background-image: url(img/distant_relay.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
 /* Pseudo-element for background image */
 /* body::before {
     content: "";
