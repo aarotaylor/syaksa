@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: Turret;
-    src: url(/static/fonts/Turret_Road.ttf) format('truetype');
+    src: url(/static/fonts/Turret_Road/TurretRoad-Regular.ttf) format('truetype');
 }
 
 @keyframes changeColor {
