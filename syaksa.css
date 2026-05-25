@@ -8,9 +8,14 @@
     src: url(/static/comfortaa/webfonts/);
 } */
 
-@font-face {
+/* @font-face {
     font-family: Redacted;
     src: url(/static/fonts/redacted-script_5.2.8/webfonts/redacted-script-latin-300-normal.woff2) format('woff2');
+} */
+
+@font-face {
+    font-family: Turret;
+    src: url(/static/fonts/turret/webfonts/turret-latin-300-normal.ttf) format('truetype');
 }
 
 @keyframes changeColor {
@@ -273,7 +278,7 @@ body {
 
 .body-text {
 
-    font-family: 'Redacted', sans-serif;
+    font-family: 'Turret', sans-serif;
     text-shadow: black;
     color: coral;
     width: 50%;
@@ -285,7 +290,7 @@ body {
 }
 
 .placeholder-text {
-    font-family: 'Redacted', sans-serif;
+    font-family: 'Turret', sans-serif;
 }
 
 img {
@@ -664,7 +669,7 @@ p {
 }
 
 .em-r {
-    font-family: Redacted;
+    font-family: Turret;
 }
 
 /*---------------------- astraphobia ----------------------*/
